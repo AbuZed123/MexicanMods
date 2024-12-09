@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Code $</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="container">
+        <h1>احصل على كود الخصم الخاص بك!</h1>
+        <form id="discount-form">
+            <div class="form-row">
+                <label for="discord-id">ايديك في الديسكورد</label>
+                <input type="text" id="discord-id" name="discord-id" required>
+            </div>
+            <div class="form-row">
+                <label for="discord-username">يوزرك في الديسكورد</label>
+                <input type="text" id="discord-username" name="discord-username" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit">احصل على كود الخصم</button>
+            </div>
+        </form>
+        <div id="discount-code" class="discount-code"></div>
+    </div>
+
+    <!-- إشعار داخل الموقع -->
+    <div id="notification" class="notification"></div>
+
+    <script src="java3.js"></script>
+
+</body>
+</html>

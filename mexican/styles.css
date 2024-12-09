@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(img/background.jpg);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* منع التمرير */
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(51, 51, 51, 0.9); /* خلفية شفافة */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    max-width: 800px;
+    animation: fadeIn 1s ease-in-out; /* تأثير الانتقال السلس */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+h1 {
+    color: hwb(0 9% 38%); /* لون العنوان */
+    margin-bottom: 30px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+button {
+    background-color: hwb(0 11% 36%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s; /* تأثيرات الزر */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* تكبير عند التمرير */
+}
+/* زر ديسكورد */
+.discord-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #380b00, #f78686); /* تدرج لوني جميل */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* عند التمرير على الزر */
+.discord-button:hover {
+    background: linear-gradient(45deg, #4e5d94, #7289da); /* تغيير التدرج عند التمرير */
+    transform: translateY(-5px); /* رفع الزر قليلاً عند التمرير */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* إضافة ظل أكبر عند التمرير */
+}
+
+/* أيقونة ديسكورد */
+.discord-button i {
+    margin-right: 10px;
+    font-size: 24px; /* تكبير حجم الأيقونة */
+}
+
+/* النص داخل الزر */
+.discord-button span {
+    font-weight: bold;
+}

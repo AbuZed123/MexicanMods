@@ -1,0 +1,273 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(img/imagesteam1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 منتجات في كل صف */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: #222; /* خلفية المنتج داكنة */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+.product:hover {
+    transform: scale(1.05); /* تأثير التكبير عند المرور على المنتج */
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 1em;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: hwb(0 11% 16%);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: hwb(0 10% 28%);
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: #333; /* خلفية داكنة */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-popup.show {
+    transform: translate(-50%, 50%); /* انزلاق لأسفل */
+}
+
+.form-container h2 {
+    margin-top: 0;
+    color: #fff; /* نص أبيض */
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* نص أبيض */
+}
+
+.form-row input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #555; /* خلفية داكنة للحقل */
+    color: #fff; /* نص أبيض */
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    background-color: hwb(0 14% 29%); /* زر أخضر */
+    color: #fff;
+    }
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #000000; /* خلفية سوداء */
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header {
+        position: relative;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    .community-link {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        color: hwb(0 10% 29%); /* لون النص */
+        text-decoration: none; /* إزالة التسطير */
+        font-size: 1.3em;
+        padding: 5px 10px;
+        border: 2px solid hwb(0 11% 27%); /* إطار */
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .community-link:hover {
+        background-color: hwb(0 11% 28%); /* تظليل الخلفية عند التمرير */
+        color: white; /* لون النص عند التمرير */
+    }
+    .corner-button {
+        position: fixed;  /* تحديد الموقع بالنسبة للشاشة */
+        bottom: 20px;     /* المسافة من الأسفل */
+        right: 20px;      /* المسافة من اليمين */
+        padding: 10px 20px; /* المسافة الداخلية للزر */
+        background-color: hwb(0 12% 19%); /* لون الخلفية */
+        color: white;     /* لون النص */
+        text-align: center; /* محاذاة النص في الوسط */
+        text-decoration: none; /* إزالة الخط السفلي من الرابط */
+        border-radius: 5px; /* زوايا دائرية */
+        font-size: 16px;   /* حجم الخط */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+        transition: background-color 0.3s ease; /* تأثير الانتقال عند التمرير */
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    /* زر ديسكورد */
+    .discord-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #380b00, #f78686); /* تدرج لوني جميل */
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 18px;
+        text-decoration: none;
+        width: fit-content;
+        margin: 20px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    /* عند التمرير على الزر */
+    .discord-button:hover {
+        background: linear-gradient(45deg, #4e5d94, #7289da); /* تغيير التدرج عند التمرير */
+        transform: translateY(-5px); /* رفع الزر قليلاً عند التمرير */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* إضافة ظل أكبر عند التمرير */
+    }
+
+    /* أيقونة ديسكورد */
+    .discord-button i {
+        margin-right: 10px;
+        font-size: 24px; /* تكبير حجم الأيقونة */
+    }
+
+    /* النص داخل الزر */
+    .discord-button span {
+        font-weight: bold;
+    }
+    .order-link, .get-code-link, .designer-link, .management-link {
+        position: absolute;
+        top: 65px;
+        color: #ffffff; /* لون النص */
+        text-decoration: none; /* إزالة التسطير */
+        font-size: 0.7em;
+        padding: 1px 10px;
+        border: 2px solid #ff0000; /* إطار */
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .order-link {
+        left: 20px;
+    }
+    
+    .get-code-link {
+        right: 230px; /* تحريك الرابط الأول قليلاً إلى اليسار */
+    }
+    
+    .designer-link {
+        right: 110px; /* وضع الرابط الثاني بجانب الأول */
+    }
+    
+    .management-link {
+        right: 20px; /* وضع الرابط الثالث بجانب الثاني */
+    }
+    
+    .order-link:hover, .get-code-link:hover, .designer-link:hover, .management-link:hover {
+        background-color: #ff0000; /* تظليل الخلفية عند التمرير */
+        color: rgb(255, 255, 255); /* لون النص عند التمرير */
+    }
+    
+    
+    
+    .discount-code {
+        margin-top: 15px;
+        font-size: 1.5em;
+        color: #FFD700;
+        word-break: break-all;
+    }
+    

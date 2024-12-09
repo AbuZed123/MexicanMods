@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    max-width: 600px; /* تقليل العرض الأقصى */
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #ff7272;
+    margin-bottom: 20px; /* تقليل المسافة السفلية */
+}
+
+.form-row {
+    margin-bottom: 15px; /* تقليل المسافة السفلية بين الحقول */
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em; /* تقليل حجم الخط */
+}
+
+input {
+    width: 100%;
+    padding: 10px; /* تقليل حجم الحشوة */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em; /* تقليل حجم الخط */
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 15px; /* تقليل المسافة العلوية */
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* تقليل حجم الحشوة */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em; /* تقليل حجم الخط */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #4b0900;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1em; /* تقليل حجم الخط */
+    margin-top: 20px;
+}
+
+.discord-link {
+    display: inline-block;
+    margin-top: 15px; /* تقليل المسافة العلوية */
+    color: white;
+    padding: 10px 20px; /* تقليل حجم الحشوة */
+    background-color: #e40000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1em; /* تقليل حجم الخط */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.discord-link:hover {
+    background-color: #7c0000;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px; /* تقليل حجم الحشوة */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateX(100%);
+    z-index: 1000;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
